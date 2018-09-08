@@ -15,7 +15,7 @@ yarn add node-floaties
 ```
 
 ### colorize
-```
+```js
 const floaties = require('node-floaties');
 process.stdin.pipe(floaties.colorize()).pipe(process.stdout);
 // output is blue
@@ -24,7 +24,7 @@ process.stdin.pipe(floaties.colorize({ color: 'green' })).pipe(process.stdout);
 ```
 
 ### prepend
-```
+```js
 const floaties = require('node-floaties');
 process.stdin.pipe(floaties.prepend('[INFO]: ')).pipe(process.stdout);
 // [INFO]: your text here

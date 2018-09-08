@@ -8,13 +8,13 @@ Utilities for node.js streams.
 
 ## install
 ```
-npm install --save floaties
-yarn add floaties
+npm install --save node-floaties
+yarn add node-floaties
 ```
 
 ### colorize
 ```
-const floaties = require('floaties');
+const floaties = require('node-floaties');
 process.stdin.pipe(floaties.colorize()).pipe(process.stdout);
 // output is blue
 process.stdin.pipe(floaties.colorize({ color: 'green' })).pipe(process.stdout);
@@ -23,7 +23,7 @@ process.stdin.pipe(floaties.colorize({ color: 'green' })).pipe(process.stdout);
 
 ### prepend
 ```
-const floaties = require('floaties');
+const floaties = require('node-floaties');
 process.stdin.pipe(floaties.prepend('[INFO]: ')).pipe(process.stdout);
 // [INFO]: your text here
 ```

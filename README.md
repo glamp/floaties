@@ -29,3 +29,5 @@ const floaties = require('node-floaties');
 process.stdin.pipe(floaties.prepend('[INFO]: ')).pipe(process.stdout);
 // [INFO]: your text here
 ```
+
+![](./examples/screenshot.png)

@@ -6,6 +6,12 @@ Utilities for node.js streams.
 
 ## Usage
 
+## install
+```
+npm install --save floaties
+yarn add floaties
+```
+
 ### colorize
 ```
 const floaties = require('floaties');

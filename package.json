@@ -1,0 +1,30 @@
+{
+  "name": "floaties",
+  "version": "0.1.0",
+  "description": "Stream utilities for node.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/glamp/floaties.git"
+  },
+  "keywords": [
+    "streams",
+    "utilities"
+  ],
+  "author": "Greg Lamp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glamp/floaties.js/issues"
+  },
+  "homepage": "https://github.com/glamp/floaties.js#readme",
+  "devDependencies": {
+    "jest": "^23.5.0"
+  },
+  "dependencies": {
+    "prepend-transform": "^0.0.1017",
+    "stream-to-blue": "^1.1.1"
+  }
+}

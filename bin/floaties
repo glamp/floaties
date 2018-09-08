@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+const pkg = require('../package.json');
+const program = require('commander');
+const floaties = require('../index');
+
+program
+  .version(pkg.version)
+  .option('-p, --prepend [text]', 'Prepend text to a stream')
+  .option('-c, --color [name]', 'Stream to a certain color')
+  .parse(process.argv);
+
+
+
+if (program.prepend) {
+  process.stdin.pipe(floaties.prepend(program.prepend)).pipe(process.stdout);
+  return;
+}
+
+if (program.color) {
+  process.stdin.pipe(floaties.colorize({ color: program.color })).pipe(process.stdout);
+  return;
+}
